@@ -1,0 +1,145 @@
+body {
+background-color: #e5e7eb;
+background-image: none;
+}
+.inner-container {
+background-color: #fff;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+border-radius: 5px;
+}
+.inner-container:not(.p-0){
+padding: 10px;
+}
+
+.field-wrapper {
+display: flex;
+flex-wrap: wrap;
+row-gap: 10px;
+}
+
+.field-row .field-col {
+display: flex;
+flex-flow: column;
+row-gap: 5px;
+}
+
+.generator-row .field-row {
+max-width: calc(100% - 60px);
+width: 100%;
+}
+.field-row .field, .edit-cell .field {
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2) inset;
+background-color: #fff;
+font-size: 12px;
+height: 32px;
+padding: 10px 10px;
+letter-spacing: .2px;
+}
+.field-row .field-file {
+font-size: 12px;
+}
+.field-row .field[disabled] {
+background-color: #fafafa;
+}
+
+.field-row label.field-label {
+font-weight: 500;
+font-size: 14px;
+}
+
+.field-row .field-info {
+font-size: 10px;
+line-height: 14px;
+color: #000;
+letter-spacing: .2px;
+}
+.field-row textarea.field, .edit-cell textarea.field {
+    height: 80px;
+}
+.theme-btn {
+    background-color: #d2232a;
+    color: #fff;
+    padding: 7.5px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2) inset;
+    letter-spacing: .5px;
+}
+.text-maroon { color: maroon; }
+
+.userAVBlock span[role="img"] {
+font-weight: 700;
+text-transform: uppercase;
+}
+
+input[type=file] {
+height: auto;
+}
+
+span.fieldUploadImage {
+position: relative;
+width: 60px;
+height: 60px;
+}
+span.fieldUploadImage input[type="file"] {
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+}
+
+.prime-datatable-column-style, .bg-slate-50 {
+    padding: 15px;
+}
+thead th {
+    padding: 15px !important;
+}
+.pi-data-table-container-style {
+    max-width: 100%;
+}
+.text-link { cursor: pointer;}
+table.custom-table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+table.custom-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.sm-password-field {
+    position: relative;
+}
+.sm-password-field input {
+    padding: 5px 30px 5px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sm-password-field span {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: -10px;
+    margin: auto;
+}
+.btn-small {
+    font-size: 12px;
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.loader {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}

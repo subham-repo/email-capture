@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Code Snippets</h1>
+    <p>Here is a list of snippets:</p>
+    <ul id="snippets"></ul>
+    <a href="/">Go Back</a>
+    <script>
+        // Fetch snippets from the server
+        fetch('/api/snippets')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('snippets');
+                data.forEach(snippet => {
+                    const item = document.createElement('li');
+                    item.textContent = `${snippet.title}: ${snippet.description}`;
+                    list.appendChild(item);
+                });
+            })
+            .catch(error => console.error('Error fetching snippets:', error));
+    </script>
+</body>
+</html>
